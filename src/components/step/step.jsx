@@ -8,13 +8,21 @@ import step2Img from "../../assets/images/step-2.png"
 import step3Img from "../../assets/images/step-3.png"
 import step4Img from "../../assets/images/step-4.png"
 
+import AOS from 'aos';
+import { useEffect } from "react";
+
 const Step = () => {
+
+  useEffect(()=>{
+    AOS.init({duration:2000})
+  },[])
+
   return (
     <section className="p-20 md:p-32">
      <div className="W-5/6 mx-auto">
         {/* step 1 */}
 
-    <div className="md:p-5 relative">
+    <div className="md:p-5 relative" data-aos="fade-up">
       {/* step1 vector */}
       <div className="absolute left-[34%] bottom-[93%] hidden lg:block">
         <img src={vetorStep1} alt="" />
@@ -47,7 +55,7 @@ const Step = () => {
     </div>
 
     {/* step 2 */}
-    <div className=" pt-20 md:pt-[235px] relative">
+    <div className=" pt-20 md:pt-[235px] relative" data-aos="fade-up">
       {/* step2 vector */}
       <div className="absolute right-[29%] top-[-10px] hidden lg:block">
         <img src={vetorStep2} alt="" />
@@ -81,7 +89,7 @@ const Step = () => {
 
     {/* step 3 */}
 
-    <div className="pt-20 md:pt-[220px] relative">
+    <div className="pt-20 md:pt-[220px] relative" data-aos="fade-up">
       {/* step3 vector */}
       <div className="absolute left-[34%] top-[-7px] hidden lg:block">
         <img src={vetorStep3} alt="" />
@@ -107,7 +115,7 @@ const Step = () => {
 
     {/* step 4 */}
 
-    <div className="pt-20 md:pt-[235px] relative">
+    <div className="pt-20 md:pt-[235px] relative" data-aos="fade-up">
       {/* step2 vector */}
       <div className="absolute right-[34%] top-[-10px] hidden lg:block">
         <img src={vetorStep4} alt="" />
