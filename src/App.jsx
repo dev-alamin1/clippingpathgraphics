@@ -1,5 +1,5 @@
 import "./App.css";
-import Banner from "./components/banner/Banner";
+import Banner from "./components/Banner/Banner";
 import Contatct from "./components/contact/Contatct";
 import Step from "./components/step/step";
 
@@ -7,7 +7,7 @@ import Step from "./components/step/step";
 function App() {
   return (
     <div>
-      <Banner />
+      <Banner/>
       <Step/>
       <Contatct/>
     </div>
