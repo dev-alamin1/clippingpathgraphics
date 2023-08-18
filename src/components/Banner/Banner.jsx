@@ -37,7 +37,7 @@ const Banner = () => {
 
       {/* banner right */}
       <div className="w-2/5">
-        <img src={bannerImg} alt="" />
+        <img src={bannerImg} className=" relative z-20" alt="" />
       </div>
     </div>
   );
