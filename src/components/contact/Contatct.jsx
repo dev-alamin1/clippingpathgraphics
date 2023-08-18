@@ -1,4 +1,7 @@
 import { useForm } from "react-hook-form";
+import {AiFillSkype} from "react-icons/ai";
+import {ImLocation} from 'react-icons/im';
+import {GrMail} from 'react-icons/gr'
 
 const Contact = () => {
   const {
@@ -32,32 +35,45 @@ const Contact = () => {
 
             <div className="mb-3">
               <h2 className="text-xl font-bold text-[#091d33] ">Skype</h2>
-              <span>-</span>{" "}
-              <span>
-                <a href="skype:rahim.minu1"></a>
-              </span>
+
+              <div className="flex justify-start items-center gap-1">
+              <AiFillSkype/>
+               <a href="skype:rahim.minu1">rahim.minu1</a>
+              </div>
             </div>
 
             <div className="mb-3">
               <h2 className="text-xl font-bold text-[#091d33] ">Mail us</h2>
-              <p>
+              
+              <div className="flex justify-start items-center gap-1">
+              <GrMail />
                 <a href="mailto:info@clippingpathgraphics.com">
                   <i></i>info@clippingpathgraphics.com
                 </a>
-              </p>
+              </div>
 
-              <p>
+              <div className="flex justify-start items-center gap-1">
+              <GrMail /> 
                 <a href="mailto:mailto:clippingpathgraphics@gmail.com">
                   <i></i>mailto:clippingpathgraphics@gmail.com
                 </a>
-              </p>
+              </div>
             </div>
 
             <div>
               <h2 className="text-xl font-bold text-[#091d33]">Visit us</h2>
-              <p> US Office: 10126 ADOBE DRIVE Houston TX 77095</p>
 
-              <p> BD Office: Bicon more collage road, Rangpur</p>
+              <div className="flex justify-start items-center gap-1">
+                <ImLocation/>
+                 <p> US Office: 10126 ADOBE DRIVE Houston TX 77095</p>
+              </div>
+
+              <div className="flex justify-start items-center gap-1">
+                <ImLocation/>
+                <p>BD Office: Bicon more collage road, Rangpur</p>
+              </div>
+             
+
             </div>
           </div>
 
