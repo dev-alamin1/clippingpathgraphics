@@ -10,10 +10,9 @@ import step4Img from "../../assets/images/step-4.png";
 
 const Step = () => {
   return (
-    <section className="p-20 md:p-32">
-      <div className="W-5/6 mx-auto">
+    <section className="py-32">
+      <div className="w-11/12 mx-auto px-10 md:px-0">
         {/* step 1 */}
-
         <div className="md:p-5 relative">
           {/* step1 vector */}
           <div className="absolute left-[34%] bottom-[93%] hidden lg:block">

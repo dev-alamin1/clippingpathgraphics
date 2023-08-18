@@ -11,7 +11,9 @@ const Banner = () => {
 
   return (
     <div style={bannerStyle}>
-      <div className="w-5/6 mx-auto flex flex-col md:flex-row justify-between items-center py-28 gap-10">
+
+  <div className="w-11/12 mx-auto">
+  <div className="px-10 md:px-0 flex flex-col md:flex-row justify-between items-center py-28 gap-10">
         {/* banner left*/}
         <div className="md:w-1/2">
           {/* breadcumb */}
@@ -37,9 +39,11 @@ const Banner = () => {
 
         {/* banner right */}
         <div className="md:w-2/5">
-          <img src={bannerImg} className=" w-full relative z-20" alt="" />
+          <img src={bannerImg} className="w-full relative z-20" alt="" />
         </div>
       </div>
+  </div>
+      
     </div>
   );
 };
