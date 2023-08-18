@@ -8,14 +8,9 @@ import step2Img from "../../assets/images/step-2.png"
 import step3Img from "../../assets/images/step-3.png"
 import step4Img from "../../assets/images/step-4.png"
 
-import AOS from 'aos';
-import { useEffect } from "react";
-
 const Step = () => {
 
-  useEffect(()=>{
-    AOS.init({duration:2000})
-  },[])
+  
 
   return (
     <section className="p-20 md:p-32">
