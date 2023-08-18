@@ -11,7 +11,7 @@ import step4Img from "../../assets/images/step-4.png";
 const Step = () => {
   return (
     <section className="py-32">
-      <div className="w-11/12 mx-auto px-10 md:px-0">
+      <div className="w-11/12 mx-auto px-5 md:px-0">
         {/* step 1 */}
         <div className="md:p-5 relative">
           {/* step1 vector */}
@@ -29,10 +29,10 @@ const Step = () => {
             {/* step1  right content  */}
             <div className="w-[100%] md:w-[58%] ">
               <h3 className="text-blue-700 font-bold mb-3">Step 01:</h3>
-              <h1 className="font-bold text-4xl text-black mb-3">
+              <h1 className="font-extrabold text-2xl md:text-4xl text-[#091d33] mb-3">
                 Free trial and Quote
               </h1>
-              <p className="mt-5">
+              <p className="mt-5 text-base leading-7">
                 We simply put our efforts to make you satisfied. We are not
                 ending here with some sort of samples but more wonders are
                 awaiting for you to make you impressed! Our professional hands
@@ -48,10 +48,10 @@ const Step = () => {
         </div>
 
         {/* step 2 */}
-        <div className=" pt-20 md:pt-[235px] relative" >
+        <div className=" pt-20 md:pt-[235px] relative">
           {/* step2 vector */}
-          <div className="absolute right-[29%] top-[-10px] hidden lg:block" >
-            <img src={vetorStep2} alt="" data-aos="fade-up"/>
+          <div className="absolute right-[29%] top-[-10px] hidden lg:block">
+            <img src={vetorStep2} alt="" data-aos="fade-up" />
           </div>
 
           {/* step2 content */}
@@ -60,11 +60,11 @@ const Step = () => {
 
             <div className="md:w-[58%]">
               <h3 className="text-blue-700 font-bold mb-3">Step 02:</h3>
-              <h1 className="font-bold text-4xl text-black mb-3">
+              <h1 className="font-extrabold text-2xl md:text-4xl text-[#091d33] mb-3">
                 Pricing and Upload
               </h1>
               <p>
-                <span className="text-blue-700">Price</span> could be negotiated
+                <span className="text-blue-700 text-base leading-7">Price</span> could be negotiated
                 depending on your need and expectations and never settled
                 without knowing your need. We help you to catch a friendly price
                 point. After we make a fair deal, we go ahead to upload. We use
@@ -78,7 +78,12 @@ const Step = () => {
             {/* step2  right content  */}
 
             <div className="md:w-[41%]">
-              <img src={step2Img} className="w-full relative z-10" alt="" data-aos="fade-up" />
+              <img
+                src={step2Img}
+                className="w-full relative z-10"
+                alt=""
+                data-aos="fade-up"
+              />
             </div>
           </div>
         </div>
@@ -95,16 +100,21 @@ const Step = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* step3 left content */}
             <div className="md:w-[41%]">
-              <img src={step3Img} className="w-full relative z-10" alt="" data-aos="fade-up" />
+              <img
+                src={step3Img}
+                className="w-full relative z-10"
+                alt=""
+                data-aos="fade-up"
+              />
             </div>
 
             {/* step3 right content  */}
             <div className="md:w-[58%]">
               <h3 className="text-blue-700 font-bold mb-3">Step 03:</h3>
-              <h1 className="font-bold text-4xl text-black mb-3">
+              <h1 className="font-extrabold text-2xl md:text-4xl text-[#091d33] mb-3">
                 Work Note & Instructions
               </h1>
-              <p>
+              <p className="text-base leading-7">
                 A habit of us to always get you in the right direction. We want
                 you to click on our{" "}
                 <span className="text-blue-700">free trial</span> button and
@@ -130,21 +140,29 @@ const Step = () => {
 
             <div className="md:w-[58%]">
               <h3 className="text-blue-700 font-bold mb-3">Step 04:</h3>
-              <h1 className="font-bold text-4xl text-black mb-3">
+              <h1 className="font-extrabold text-2xl md:text-4xl text-[#091d33] mb-3">
                 Work Done & Download Files
               </h1>
-              <p className="mt-5">
-                Download your professionally edited images. 
+              <p className="mt-5 text-base leading-7">
+                Download your professionally edited images.
               </p>
-              <p className="mt-5">Once your photos are
-                ready, we’ll email you a link to download or you can <span className="text-blue-700 ">login your
-                dashboard</span> see your files, all ready to go.</p>
+              <p className="mt-5 text-base leading-7">
+                Once your photos are ready, we’ll email you a link to download
+                or you can{" "}
+                <span className="text-blue-700 ">login your dashboard</span> see
+                your files, all ready to go.
+              </p>
             </div>
 
             {/* step2  right content  */}
 
             <div className="md:w-[41%]">
-              <img src={step4Img} className="w-full relative z-10" alt="" data-aos="fade-up" />
+              <img
+                src={step4Img}
+                className="w-full relative z-10"
+                alt=""
+                data-aos="fade-up"
+              />
             </div>
           </div>
         </div>

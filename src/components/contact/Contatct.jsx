@@ -1,7 +1,8 @@
 import { useForm } from "react-hook-form";
-import {AiFillSkype} from "react-icons/ai";
-import {ImLocation} from 'react-icons/im';
-import {GrMail} from 'react-icons/gr'
+import { AiFillSkype } from "react-icons/ai";
+import { ImLocation } from "react-icons/im";
+import { GrMail } from "react-icons/gr";
+import { FaPhone } from "react-icons/fa";
 
 const Contact = () => {
   const {
@@ -15,12 +16,12 @@ const Contact = () => {
   return (
     <div className="py-8 md:py-32 border border-t-slate-300">
       <div className="w-11/12 mx-auto">
-        <div className=" px-10  md:px-0 flex flex-col md:flex-row justify-between items-start">
+        <div className=" px-5  md:px-0 flex flex-col md:flex-row justify-between items-start">
           <div className="md:w-2/5">
             <h1 className="text-4xl font-bold text-[#091d33] mb-3">
               Get in Touch
             </h1>
-            <p className="mb-3">
+            <p className="mb-3 text-base">
               Clipping Path Graphics is one of the trusted Clipping Path Service
               Provider in 2022. We have the experience of working in this field.
               Almost 5 years and working with hundred clients from all over the
@@ -28,32 +29,36 @@ const Contact = () => {
             </p>
 
             <div className="mb-3">
-              <h2 className="text-xl font-bold text-[#091d33] ">Call us</h2>
-              <span>-</span>
-              <span>+1 (304) 574-8370 Skype</span>
+              <h2 className="text-xl font-bold text-[#091d33] mb-2 ">Call us</h2>
+
+              <div className="flex justify-start items-center gap-1 text-base hover:text-orange-500 transition delay-100">
+                  <FaPhone />
+                <a href="tel:+1 (304) 574-8370">+1 (304) 574-8370</a>
+              </div>
+
             </div>
 
             <div className="mb-3">
-              <h2 className="text-xl font-bold text-[#091d33] ">Skype</h2>
+              <h2 className="text-xl font-bold text-[#091d33] mb-2">Skype</h2>
 
-              <div className="flex justify-start items-center gap-1">
-              <AiFillSkype/>
-               <a href="skype:rahim.minu1">rahim.minu1</a>
+              <div className="flex justify-start items-center gap-1 text-base hover:text-orange-500 transition delay-100">
+                <AiFillSkype />
+                <a href="skype:rahim.minu1">rahim.minu1</a>
               </div>
             </div>
 
             <div className="mb-3">
-              <h2 className="text-xl font-bold text-[#091d33] ">Mail us</h2>
-              
-              <div className="flex justify-start items-center gap-1">
-              <GrMail />
+              <h2 className="text-xl font-bold text-[#091d33] mb-2 ">Mail us</h2>
+
+              <div className="flex justify-start items-center gap-1 text-base hover:text-orange-500 transition delay-100">
+                <GrMail />
                 <a href="mailto:info@clippingpathgraphics.com">
                   <i></i>info@clippingpathgraphics.com
                 </a>
               </div>
 
-              <div className="flex justify-start items-center gap-1">
-              <GrMail /> 
+              <div className="flex justify-start items-center gap-1 text-base hover:text-orange-500 transition delay-100">
+                <GrMail />
                 <a href="mailto:mailto:clippingpathgraphics@gmail.com">
                   <i></i>mailto:clippingpathgraphics@gmail.com
                 </a>
@@ -61,19 +66,17 @@ const Contact = () => {
             </div>
 
             <div>
-              <h2 className="text-xl font-bold text-[#091d33]">Visit us</h2>
+              <h2 className="text-xl font-bold text-[#091d33] mb-2">Visit us</h2>
 
-              <div className="flex justify-start items-center gap-1">
-                <ImLocation/>
-                 <p> US Office: 10126 ADOBE DRIVE Houston TX 77095</p>
+              <div className="flex justify-start items-center gap-1 text-base">
+                <ImLocation />
+                <p> US Office: 10126 ADOBE DRIVE Houston TX 77095</p>
               </div>
 
-              <div className="flex justify-start items-center gap-1">
-                <ImLocation/>
+              <div className="flex justify-start items-center gap-1 text-base">
+                <ImLocation />
                 <p>BD Office: Bicon more collage road, Rangpur</p>
               </div>
-             
-
             </div>
           </div>
 
@@ -82,7 +85,7 @@ const Contact = () => {
               <div className="mb-4 flex text-[#091d33]">
                 <div className="mr-2 w-1/2">
                   <label htmlFor="name" className="block   font-bold text-xl">
-                    Name
+                    Name *
                   </label>
                   <input
                     {...register("name", { required: "Name is required" })}
@@ -97,7 +100,7 @@ const Contact = () => {
                 </div>
                 <div className="ml-2 w-1/2">
                   <label htmlFor="email" className="block text-xl font-bold ">
-                    Email
+                    Email *
                   </label>
                   <input
                     {...register("email", { required: "Email is required" })}
@@ -116,7 +119,7 @@ const Contact = () => {
                   htmlFor="subject"
                   className="block text-xl font-bold text-[#091d33]"
                 >
-                  Subject
+                  Subject *
                 </label>
                 <input
                   {...register("subject", { required: "Subject is required" })}
@@ -134,7 +137,7 @@ const Contact = () => {
                   htmlFor="message"
                   className="block text-xl font-bold text-[#091d33]"
                 >
-                  Message
+                  Message *
                 </label>
                 <textarea
                   {...register("message", { required: "Message is required" })}
