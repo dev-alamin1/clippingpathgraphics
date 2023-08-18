@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: "Rubik",sans-serif;
+    font-size: 18px;
+    color: #4f5864;
+    line-height: 30px;
+    font-weight: 400;
+    background: #f5f6fb;
+}
