@@ -16,7 +16,7 @@ const Step = () => {
 
     <div className="md:p-5 relative">
       {/* step1 vector */}
-      <div className="absolute left-[34%] bottom-[93%] hidden md:block">
+      <div className="absolute left-[34%] bottom-[93%] hidden lg:block">
         <img src={vetorStep1} alt="" />
       </div>
 
@@ -49,7 +49,7 @@ const Step = () => {
     {/* step 2 */}
     <div className=" pt-20 md:pt-[235px] relative">
       {/* step2 vector */}
-      <div className="absolute right-[29%] top-[-10px] hidden md:block">
+      <div className="absolute right-[29%] top-[-10px] hidden lg:block">
         <img src={vetorStep2} alt="" />
       </div>
 
@@ -83,7 +83,7 @@ const Step = () => {
 
     <div className="pt-20 md:pt-[220px] relative">
       {/* step3 vector */}
-      <div className="absolute left-[34%] top-[-7px] hidden md:block">
+      <div className="absolute left-[34%] top-[-7px] hidden lg:block">
         <img src={vetorStep3} alt="" />
       </div>
 
@@ -109,7 +109,7 @@ const Step = () => {
 
     <div className="pt-20 md:pt-[235px] relative">
       {/* step2 vector */}
-      <div className="absolute right-[34%] top-[-10px] hidden md:block">
+      <div className="absolute right-[34%] top-[-10px] hidden lg:block">
         <img src={vetorStep4} alt="" />
       </div>
 
