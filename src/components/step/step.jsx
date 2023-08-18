@@ -10,25 +10,25 @@ import step4Img from "../../assets/images/step-4.png"
 
 const Step = () => {
   return (
-    <section className="p-32">
+    <section className="p-20 md:p-32">
      <div className="W-5/6 mx-auto">
         {/* step 1 */}
 
-    <div className="p-5 relative">
+    <div className="md:p-5 relative">
       {/* step1 vector */}
-      <div className="absolute left-[34%] bottom-[93%]">
+      <div className="absolute left-[34%] bottom-[93%] hidden md:block">
         <img src={vetorStep1} alt="" />
       </div>
 
       {/* step1 content */}
-      <div className="flex justify-between items-center gap-4">
+      <div className="flex flex-col md:flex-row justify-between items-center  gap-4">
         {/* step1 left content */}
-        <div className="w-[41%]">
+        <div className="w-[100%] md:w-[41%]">
           <img src={step1Img} className="w-full relative z-10" alt="" />
         </div>
 
         {/* step1  right content  */}
-        <div className="w-[58%]">
+        <div className="w-[100%] md:w-[58%] ">
           <h3>Step 01:</h3>
           <h1>Free trial and Quote</h1>
           <p className="">
@@ -43,20 +43,21 @@ const Step = () => {
           </p>
         </div>
       </div>
+
     </div>
 
     {/* step 2 */}
-    <div className="pt-[235px] relative">
+    <div className=" pt-20 md:pt-[235px] relative">
       {/* step2 vector */}
-      <div className="absolute right-[29%] top-[-10px]">
+      <div className="absolute right-[29%] top-[-10px] hidden md:block">
         <img src={vetorStep2} alt="" />
       </div>
 
       {/* step2 content */}
-      <div className="flex justify-between items-center gap-4">
+      <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-4">
         {/* step2 left content */}
 
-        <div className="w-[58%]">
+        <div className="md:w-[58%]">
           <h3>Step 02:</h3>
           <h1>Pricing and Upload</h1>
           <p>
@@ -72,7 +73,7 @@ const Step = () => {
 
         {/* step2  right content  */}
 
-        <div className="w-[41%]">
+        <div className="md:w-[41%]">
           <img src={step2Img} className="w-full relative z-10" alt="" />
         </div>
       </div>
@@ -80,21 +81,21 @@ const Step = () => {
 
     {/* step 3 */}
 
-    <div className="pt-[220px] relative">
+    <div className="pt-20 md:pt-[220px] relative">
       {/* step3 vector */}
-      <div className="absolute left-[34%] top-[-7px]">
+      <div className="absolute left-[34%] top-[-7px] hidden md:block">
         <img src={vetorStep3} alt="" />
       </div>
 
       {/* step3 content */}
-      <div className="flex justify-between items-center gap-4">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-4">
         {/* step3 left content */}
-        <div className="w-[41%]">
+        <div className="md:w-[41%]">
           <img src={step3Img} className="w-full relative z-10" alt="" />
         </div>
 
         {/* step3 right content  */}
-        <div className="w-[58%]">
+        <div className="md:w-[58%]">
           <h3>Step 03:</h3>
           <h1>Work Note & Instructions</h1>
           <p>
@@ -106,17 +107,17 @@ const Step = () => {
 
     {/* step 4 */}
 
-    <div className="pt-[235px] relative">
+    <div className="pt-20 md:pt-[235px] relative">
       {/* step2 vector */}
-      <div className="absolute right-[34%] top-[-10px]">
+      <div className="absolute right-[34%] top-[-10px] hidden md:block">
         <img src={vetorStep4} alt="" />
       </div>
 
       {/* step2 content */}
-      <div className="flex justify-between items-center gap-4">
+      <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-4">
         {/* step2 left content */}
 
-        <div className="w-[58%]">
+        <div className="md:w-[58%]">
           <h3>Step 04:</h3>
           <h1>Pricing and Upload</h1>
           <p>
@@ -132,7 +133,7 @@ const Step = () => {
 
         {/* step2  right content  */}
 
-        <div className="w-[41%]">
+        <div className="md:w-[41%]">
           <img src={step4Img} className="w-full relative z-10" alt="" />
         </div>
       </div>
