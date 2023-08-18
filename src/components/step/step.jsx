@@ -10,10 +10,11 @@ import step4Img from "../../assets/images/step-4.png"
 
 const Step = () => {
   return (
-    <section className="p-20">
-    {/* step 1 */}
+    <section className="p-32">
+     <div className="W-5/6 mx-auto">
+        {/* step 1 */}
 
-    <div className="p-[200] relative">
+    <div className="p-5 relative">
       {/* step1 vector */}
       <div className="absolute left-[34%] bottom-[93%]">
         <img src={vetorStep1} alt="" />
@@ -30,7 +31,7 @@ const Step = () => {
         <div className="w-[58%]">
           <h3>Step 01:</h3>
           <h1>Free trial and Quote</h1>
-          <p>
+          <p className="">
             We simply put our efforts to make you satisfied. We are not
             ending here with some sort of samples but more wonders are
             awaiting for you to make you impressed! Our professional hands
@@ -136,6 +137,7 @@ const Step = () => {
         </div>
       </div>
     </div>
+     </div>
 
   </section>
   )

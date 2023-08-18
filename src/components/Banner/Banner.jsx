@@ -6,13 +6,17 @@ const Banner = () => {
   const bannerStyle = {
     backgroundImage: `url(${bannerBg})`,
     backgroundSize: 'cover',
-    backgroundPosition: 'center',
+    backgroundPosition: 'center center',
+    backgroundRepeat:'no-repeat',
+
   };
 
 
   return (
-    <div className="flex justify-between items-center px-11 py-28 gap-10" style={bannerStyle}>
-      {/* banner left*/}
+    <div  style={bannerStyle}>
+
+      <div className=" w-5/6 mx-auto flex justify-between items-center  py-28 gap-10">
+           {/* banner left*/}
       <div className="w-1/2">
         {/* breadcumb */}
         <div className="mb-14">
@@ -27,7 +31,7 @@ const Banner = () => {
         <h3 className="text-2xl text-orange-600 font-semibold mb-5">
           Our Strategy and Project plan
         </h3>
-        <p>
+        <p className="w-full tracking-wider	">
           We always allow our prospects with all the freedom to put their own
           ideas and creative thinking to the specific work orders and make them
           wise by getting them space by selecting samples.Lets check our working
@@ -39,6 +43,10 @@ const Banner = () => {
       <div className="w-2/5">
         <img src={bannerImg} className=" relative z-20" alt="" />
       </div>
+
+      </div>
+
+     
     </div>
   );
 };
